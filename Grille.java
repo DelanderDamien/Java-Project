@@ -16,9 +16,12 @@ public class Grille {
 	char titreLigne [] = {' ','A','B','C','D','E','F','G','H','I','J'};
 	matrice[0] = titreLigne;
 	
+	// La colonne des coordonnées
+	for	(int a=0; a < matrice.length; a++) {
+		
+	}
 	
-	
-	for(int k=0; k < matrice.length ;k++){
+	for (int k=0; k < matrice.length ;k++){
 		for(int j=0; j < matrice[k].length ;j++){
 			System.out.print(matrice[k][j]+" " );
 			}
