@@ -4,7 +4,7 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		char choix;
+		char choix = 'm';
 		
 		System.out.print("\n______       _   _   _        ___      _ ");  
 		System.out.print("\n| ___ \\     | | | | | |      |_  |    | |  ");
@@ -13,28 +13,29 @@ public class Main {
 		System.out.print("\n| |_/ / (_| | |_| |_| |  __/\\__/ /  __/ |_ ");
 		System.out.print("\n\\____/ \\__,_|\\__|\\__|_|\\___\\____/ \\___|\\__|");
 		System.out.println("\n\nBienvenue dans notre jeu BATTLEJET!");
-		System.out.println("Quel type de partie voulez-vous jouer?(indiquer numÈro du choix)");
-		System.out.println("\n1. - En rÈseau");
+		System.out.println("Quel type de partie voulez-vous jouer?(indiquer num√©ro du choix)");
+		System.out.println("\n1. - En r√©seau");
 		System.out.println("\n2. - En local");
 		 
 		Scanner cs = new Scanner(System.in);
 		
+		while (choix != '1' || choix !='2'){
+			
 		choix = cs.nextLine().charAt(0);
 		
 		if (choix == '1') {
-			System.out.println("Vous avez choisi en rÈseau");
+			System.out.println("Vous avez choisi en r√©seau");
 		}
 		else if (choix == '2') {
 			System.out.println("Vous aller jouer en local! C'est parti...");
 		}
 		else {
-			System.out.println("Erreur de choix!");			
-		}
-		
-                                           
-                                           
-
-
-	}
+			System.out.println("Erreur de choix!");
+			System.out.println("\nQuel type de partie voulez-vous jouer?(indiquer num√©ro du choix)");
+			System.out.println("\n1. - En r√©seau");
+			System.out.println("\n2. - En local");
+				}
+			}                                   
+        }
 
 }
